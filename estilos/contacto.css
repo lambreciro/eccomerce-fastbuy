@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62,5%;
+}
+
+body{
+    background-color: #FFEFEF;
+}
+
+/* Etiquetas */
+
+header{
+    background-color: #FFD39A;
+    padding: 2rem;
+}
+
+div p{
+    text-align: center;
+}
+
+div h2{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
+h4{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    background-color: #FFD39A;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 11.3rem;
+}
+
+button{
+    width: 15.5rem;
+    height: 1.5rem;
+    border-radius: 0.2rem;
+    box-shadow: 0 0.1rem 0.2rem 0 #575050;
+}
+
+button:hover{
+    box-shadow: inset 0 0 1rem rgb(219, 214, 214);
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFD39A;
+}
+
+footer nav ul li{
+    padding: 0.4rem 0 0 0;
+    position: relative;
+    bottom: 0.5rem;
+}
+
+/* Clases */
+
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navA{
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Comfortaa', cursive;
+    color: #000000;
+    font-size: 1.5rem;
+}
+
+.header__navA:hover{
+    color: #ffffff;
+}
+
+.main__input{
+    margin: 0.4rem;
+    border-radius: 0.2rem;
+    box-shadow: 0 0.1rem 0.2rem 0 #575050;
+    outline: none;
+}
+
+.asunto{
+    width: 15.5rem;
+    height: 1.5rem;
+    border: solid 0.1rem #5e5353;
+}
+
+.mensaje{
+    resize: none;
+    padding: 0.6rem;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.main__divH4{
+    position: relative;
+    right: 10.5rem;
+    top: 2rem;
+    font-size: 1.3rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.footer__ul{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.2rem;
+    gap: 1.8rem;
+    position: relative;
+    left: 1rem;
+    top: 0.5rem;
+}
+
+.footer__divH{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.footer__divA{
+    display: flex;
+}
+
+.fab{
+    align-self: center;
+    color: black;
+    margin: 1rem;
+}
+
+.footer__h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    position: relative;
+    right: 0.5rem;
+}
+
+.footer__h6{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.6rem;
+    position: relative;
+    right: 0.5rem;
+}
+
+.footer__ul--enlaces{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+}
+
+.footer__ul--enlaces:hover{
+    color: white;
+}
+
+.contacto{
+    color: #706161;
+}

@@ -1,0 +1,576 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62,5%;
+}
+
+body{
+    background-color: #d8d8d8d5;
+}
+
+/* Etiquetas */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #FFD39A;
+}
+
+aside{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFD39A;
+}
+
+footer nav ul li{
+    padding: 0.4rem 0 0 0;
+    position: relative;
+    bottom: 0.5rem;
+}
+
+/*Clases*/
+
+.header__navLi{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+} 
+
+.header__navLi:hover{
+    color: white;
+}
+.barra{
+    border-right: solid 0.1rem #554f4f;
+    padding-right: 1rem;
+}
+
+.left{
+    position: relative;
+    right: 0.2rem;
+}
+
+.header__nav{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    gap: 1.3rem;
+}
+
+.header__search{
+    width: 35rem;
+    height: 2rem;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    text-align: left;
+    border-radius: 0.4rem;
+    box-shadow: 0.1rem 0.1rem 0.2rem #001219;
+    outline: none;
+}
+
+.header__btn{
+    padding: 0.3rem;
+    border: none;
+    background: #fdfdfd;
+    position: relative;
+    right: 2.3rem;
+}
+
+.main__promo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__imgPromo{
+    width: 100%;
+    margin: 3rem 0 1.5rem 0;
+}
+
+.main__catImg{
+    display: grid;
+    grid-template-areas: 
+    "principal supermercado gimnasio ropa"
+    "valoracion valoracion valoracion valoracion";
+    grid-template-rows: repeat(2, 50vh);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    padding: 3rem;
+}
+
+.main__imgPrincipal{
+    grid-area: principal;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.main__divPrincipal{
+    border: #554f4f solid 0.1rem;
+    padding: 1rem;
+    background: #fdfdfd;
+}
+
+.principal{
+    text-align: center;
+    font-size: 1rem;
+}
+.supermercado{
+    grid-area: supermercado;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.gimnasio{
+    grid-area: gimnasio;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.ropa{
+    grid-area: ropa;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.main__seller{
+    grid-area: valoracion;
+    position: relative;
+    overflow: hidden;
+}
+
+.main__divSeller{
+    position: absolute;
+    bottom: 8rem;
+    left: 46rem;
+    font-family: 'Bebas Neue', cursive;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+.main__imgSeller{
+    width: 100%;
+    position: relative;
+    bottom: 8rem;
+}
+
+.main__divBtn{
+    position: absolute;
+    bottom: 3rem;
+    right: 23rem;
+    background-color: #FC4F4F;
+    padding: 0.7rem;
+    font-size: 2rem;
+    color: #fdfdfd;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    border-radius: 0.5rem;
+    border: #001219 solid 2px;
+}
+
+.main__h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.main__divBorder{
+    border: #554f4f solid 0.1rem;
+    padding: 1rem;
+    background: #fdfdfd;
+}
+
+.categorias{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.top{
+    border-top: #554f4f solid 0.1rem;
+}
+
+.section__masVendidos{
+   display: flex;
+   justify-content: space-between;
+}
+
+.phone{
+    width: 100%;
+}
+
+.laptop{
+    width: 100%;
+}
+
+.bike{
+    width: 100%;
+}
+
+.headphone{
+    width: 100%;
+}
+
+.shoes{
+    width: 100%;
+}
+
+.footer__ul{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.2rem;
+    gap: 1.8rem;
+    position: relative;
+    left: 1rem;
+    top: 0.5rem;
+}
+
+.footer__divH{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.footer__divA{
+    display: flex;
+}
+
+.fab{
+    align-self: center;
+    color: black;
+    margin: 1rem;
+}
+
+.footer__h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    position: relative;
+    right: 0.5rem;
+}
+
+.footer__h6{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.6rem;
+    position: relative;
+    right: 0.5rem;
+}
+
+.footer__ul--enlaces{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+}
+
+.footer__ul--enlaces:hover{
+    color: white;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px){
+
+    .header{
+        display: grid;
+        grid-template-areas: 
+        "logo nav"
+        "search search";
+        grid-template-rows: 10vh 4vh;
+        grid-template-columns: 20% 1fr;
+        gap: 0.5rem;
+    }
+
+    .header__logo{
+        grid-area: logo;
+    }
+
+    .header__nav{
+        grid-area: nav;
+        padding: 0rem;
+        font-size: 1.2rem;
+    }
+    
+    .header__search{
+        grid-area: search;
+        width: 30rem;
+        height: 2rem;
+    }
+
+    .header__divSearch{
+        position: relative;
+        left: 8rem;
+    }
+
+    .header__btn{
+        position: absolute;
+        left: 28rem;
+        bottom: 0.2rem;
+        padding: 0.3rem;
+    }
+
+    .main__promo{
+        padding: 0.5rem;
+    }
+
+    .main__imgPromo{
+        width: 80%;
+        margin: 1rem 0 0 0;
+        position: relative;
+        left: 4.7rem;
+    }
+    
+    .main__h4{
+        font-size: 2rem;
+    }
+
+    .main__catImg{
+        display: grid;
+        grid-template-areas: 
+        "principal supermercado" 
+        "gimnasio ropa"
+        "valoracion valoracion";
+        grid-template-rows: repeat(2, 50vh) 20%;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: 1rem;
+        padding: 1rem 2rem;
+    }
+    
+    .principal{
+        font-size: 2rem;
+    }
+
+    .categorias{
+        font-size: 1.3rem;
+    }
+
+    .bottom{
+        padding-top: 0.5rem;
+    }
+
+    .top{
+        position: relative;
+        bottom: 0.7rem;
+    }
+
+    .ropa{
+        font-size: 2rem;
+    }
+
+    .main__divSeller{
+        bottom: 5rem;
+        left: 21.5rem;
+        font-size: 3.5rem;
+    }
+    
+    .main__imgSeller{
+        bottom: 5rem;
+    }
+    
+    .main__divBtn{
+        bottom: 1.5rem;
+        right: 8rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+    
+    .footer__ul{
+        font-size: 1rem;
+        gap: 1rem;
+    }
+
+    .footer__divH{
+        flex-grow: 0;
+        position: relative;
+        right: 1.2rem;
+    }
+
+    .footer__h3{
+        font-size: 0.7rem;
+        right: 0;
+    }
+    
+    .footer__h6{
+        font-size: 0.5rem;
+        right: 0;
+    }
+    
+    
+}
+
+@media screen and (max-width: 426px){
+    
+    .header{
+        display: grid;
+        grid-template-areas: 
+        "logo"
+        "nav"
+        "search";
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 100vw;
+        justify-items: center;
+        padding: 0.3rem 0;
+        gap: 0.3rem 0;
+    }
+
+    .header__logo{
+        grid-area: logo;
+    }
+
+    .header__nav{
+        grid-area: nav;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+
+    .header__search{
+        grid-area: search;
+        width: 20rem;
+        height: 1.8rem;
+    }
+
+    .header__btn{
+        position: absolute;
+        left: 21.5rem;
+        bottom: 32.2rem;
+        padding: 0.1rem;
+    }
+
+    .main__promo{
+        padding: 0.5rem;
+    }
+
+    .main__imgPromo{
+        width: 70%;
+        margin: 1rem 0 0 0;
+        position: relative;
+        left: 3.8rem;
+    }
+    
+    .main__h4{
+        font-size: 1.2rem;
+    }
+
+    .main__catImg{
+        display: grid;
+        grid-template-areas: 
+        "principal supermercado" 
+        "gimnasio ropa"
+        "valoracion valoracion";
+        grid-template-rows: repeat(2, 50vh) 15%;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    
+    .main__divPrincipal{
+        padding: 0.4rem;
+    }
+    
+    .principal{
+        font-size: 1rem;
+        align-self: center;
+    }
+
+    .categorias{
+        font-size: 5rem;
+    }
+
+    .bottom{
+        padding-top: 0.5rem;
+    }
+
+    .top{
+        position: relative;
+        bottom: 0.7rem;
+    }
+    
+    .main__divBorder{
+        padding: 0.4rem;
+    }
+    
+    .main__divSeller{
+        bottom: 4rem;
+        left: 12rem;
+        font-weight: 900;
+        font-size: 1.5rem;
+    }
+    
+    .main__imgSeller{
+        bottom: 2rem;
+    }
+    
+    .main__divBtn{
+        bottom: 1.5rem;
+        right: 5rem;
+        padding: 0.3rem;
+        font-size: 1rem;
+    }
+
+    footer{
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+
+    .footer__ul{
+        flex-direction: column;
+        font-size: 0.8rem;
+        gap: 0.3rem;
+        position: relative;
+        left: 0.5rem;
+        top: 0.8rem;
+    }
+
+    .footer__divH{
+        flex-grow: 0;
+        position: relative;
+        left: 2rem;
+    }
+
+    .footer__h3{
+        font-size: 0.6rem;
+        right: 0;
+    }
+    
+    .footer__h6{
+        font-size: 0.4rem;
+        right: 0;
+    }
+    
+    .footer__divA{
+        position: relative;
+        left: 1rem;
+    }
+    
+    .fab{
+        margin: 0.3rem;
+    }
+}
+
+
+
+
+
+
+

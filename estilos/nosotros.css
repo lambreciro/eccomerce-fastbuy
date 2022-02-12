@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62,5%;
+}
+
+body{
+    background-color: #FFEFEF;
+}
+
+/* Etiquetas */
+
+header{
+    background-color: #FFD39A;
+    padding: 2rem;
+}
+
+div p{
+    text-align: center;
+}
+
+div h2{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFD39A;
+}
+
+footer nav ul li{
+    padding: 0.4rem 0 0 0;
+    position: relative;
+    bottom: 0.5rem;
+}
+
+/* Clases */
+
+.headerContenedor{
+    display: grid;
+    grid-template-rows: 3rem 4rem 2.5rem;
+    grid-row-gap: 0.5rem;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navA{
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Comfortaa', cursive;
+    color: #000000;
+    font-size: 1.5rem;
+}
+
+.header__navA:hover{
+    color: #ffffff;
+}
+
+.imgLogo{
+    width: 5rem;
+    height: 5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.main__divUno{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: 30rem;
+}
+
+.main__pUno{
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    padding: 1rem;
+    align-self: center;
+}
+
+.main__imgUno{
+    padding: 1.5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.main__divDos{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: 30rem;
+}
+
+.main__pDos{
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    padding: 1rem;
+    align-self: center;
+}
+
+.main__imgDos{
+    padding: 1.5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.footer__ul{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.2rem;
+    gap: 1.8rem;
+    position: relative;
+    left: 1rem;
+    top: 0.5rem;
+}
+
+.footer__divH{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.footer__divA{
+    display: flex;
+}
+
+.fab{
+    align-self: center;
+    color: black;
+    margin: 1rem;
+}
+
+.footer__h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    position: relative;
+    right: 0.5rem;
+}
+
+.footer__h6{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.6rem;
+    position: relative;
+    right: 0.5rem;
+}
+
+.footer__ul--enlaces{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+}
+
+.footer__ul--enlaces:hover{
+    color: white;
+}
+
+.nosotros{
+    color: #706161;
+}
