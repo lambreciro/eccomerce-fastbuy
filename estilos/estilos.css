@@ -123,6 +123,25 @@ footer nav ul li{
     background: #fdfdfd;
 }
 
+.main__divPrincipal:hover{
+    height: 105%;
+    color: #554f4f;
+    transition-property: all 8s;
+    transition-duration: 10s;
+    transition-timing-function: linear;
+}
+
+.main__divBorder:hover{
+    height: 105%;
+    transition-property: 8s;
+    transition-duration: 10s;
+    transition-timing-function: linear;
+}
+
+.div__ancor{
+    text-decoration: none;
+}
+
 .principal{
     text-align: center;
     font-size: 1rem;
@@ -182,12 +201,21 @@ footer nav ul li{
     font-weight: 300;
     border-radius: 0.5rem;
     border: #001219 solid 2px;
+    box-shadow: 2px 2px 1px black;
+    cursor: pointer;
+}
+
+.main__divBtn:hover{
+    box-shadow: none;
+    background-color: #f56b6b;
+    transition: all 0.5s 0s linear;
 }
 
 .main__h4{
     font-family: 'Oswald', sans-serif;
     font-size: 2rem;
     margin-top: 1rem;
+    color: #001219;
 }
 
 .main__divBorder{
@@ -259,6 +287,21 @@ footer nav ul li{
     align-self: center;
     color: black;
     margin: 1rem;
+}
+
+.twitter:hover{
+    color: #06aeb4b0;
+    transition: 0.5s 0s linear;
+}
+
+.facebook:hover{
+    color: #0163f5;
+    transition: 0.5s 0s linear;
+}
+
+.instagram:hover{
+    color: #e65015;
+    transition: 0.5s 0s linear;
 }
 
 .footer__h3{
