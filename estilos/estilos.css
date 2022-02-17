@@ -32,6 +32,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     background: #FFD39A;
+    height: 10vh;
 }
 
 footer nav ul li{
@@ -47,6 +48,7 @@ footer nav ul li{
     list-style-type: none;
     color: black;
     font-family: 'Comfortaa', cursive;
+    font-weight: 300;
 } 
 
 .header__navLi:hover{
@@ -85,6 +87,17 @@ footer nav ul li{
     background: #fdfdfd;
     position: relative;
     right: 2.3rem;
+}
+
+.div-of{
+    height: 50vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.pos-rel{
+    position: relative;
+    bottom: 18rem;
 }
 
 .main__promo{
@@ -215,6 +228,7 @@ footer nav ul li{
     font-family: 'Oswald', sans-serif;
     font-size: 2rem;
     margin-top: 1rem;
+    font-weight: bold;
     color: #001219;
 }
 
@@ -268,15 +282,15 @@ footer nav ul li{
     font-size: 1.2rem;
     gap: 1.8rem;
     position: relative;
-    left: 1rem;
-    top: 0.5rem;
+    top: 1rem;
 }
 
 .footer__divH{
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     align-items: center;
+    position: relative;
+    right: 4rem;
 }
 
 .footer__divA{

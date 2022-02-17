@@ -40,6 +40,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     background: #FFD39A;
+    height: 10vh;
 }
 
 footer nav ul li{
@@ -67,54 +68,16 @@ footer nav ul li{
     color: #ffffff;
 }
 
-.main__contenedor{
-    display: grid;
-    grid-template-areas: "h4 h4" 
-                        "h3 img"
-                        "h3 img"
-                        "h3 img"
-                        "h3 img";
-    grid-template-rows: 2.5rem repeat(4, 8rem);
-    grid-template-columns: 40% 60%;
-    justify-items: center;
+.text-center{
+    padding-left: 32rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-.main__contenedor h4{
-    grid-area: h4;
-    margin-top: 1rem;
-}
-
-.main__contenedor h3{
-    grid-area: h3;
-}
-
-.main__contenedor img{
-    grid-area: img;
-}
-
-.main__divH3{
-    display: flex;
-    flex-direction: column;
-}
-
-.main__h3{
-    border: #000000 solid 0.1rem;
-    background-color: bisque;
-    height: 3rem;
-    width: 100%;
-    margin: 3rem 2rem;
-    text-align: center;
-    padding: 0 5rem;
-}
-
-.fas{
-    position: relative;
-    left: 6.5rem;
-}
-
-.main__divImg{
-    position: relative;
-    top: 5rem;
+.font{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
 }
 
 .footer__ul{
@@ -126,15 +89,15 @@ footer nav ul li{
     font-size: 1.2rem;
     gap: 1.8rem;
     position: relative;
-    left: 1rem;
-    top: 0.5rem;
+    top: 1rem;
 }
 
 .footer__divH{
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     align-items: center;
+    position: relative;
+    right: 4rem;
 }
 
 .footer__divA{
@@ -145,6 +108,21 @@ footer nav ul li{
     align-self: center;
     color: black;
     margin: 1rem;
+}
+
+.twitter:hover{
+    color: #06aeb4b0;
+    transition: 0.5s 0s linear;
+}
+
+.facebook:hover{
+    color: #0163f5;
+    transition: 0.5s 0s linear;
+}
+
+.instagram:hover{
+    color: #e65015;
+    transition: 0.5s 0s linear;
 }
 
 .footer__h3{
